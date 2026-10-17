@@ -178,13 +178,13 @@ footer{background:#06111c;color:#b8c7d6;padding:44px 0 120px;font-size:.95rem}fo
 <section id="ask" style="background:#fff"><div class="wrap">
 <span class="kick">Quick question</span>
 <h2>What do you need?</h2>
-<p class="sub">Three taps, then send it straight to Joe by text. Nothing is stored on this page.</p>
-<form class="quiz" data-sms="+15127886361" data-lead="Hi Joe, I found you online. I need:" onsubmit="return false" aria-label="What do you need? quick question">
+<p class="sub">Three taps, then send it straight to Joe by email, or just call. Nothing is stored on this page.</p>
+<form class="quiz" data-mail="joeagomez74@gmail.com" data-subj="Gutter estimate request" data-lead="Hi Joe, I found you online. I need:" onsubmit="return false" aria-label="What do you need? quick question">
 <div class="qbar" aria-hidden="true"><i></i></div>
 <fieldset><legend><span class="sn">Step 1</span>What do you need?</legend><div class="opts"><label><input type="radio" name="q1" value="Seamless gutters">Seamless gutters</label><label><input type="radio" name="q1" value="Half-round or box gutters">Half-round or box</label><label><input type="radio" name="q1" value="Leaf guards">Leaf guards</label><label><input type="radio" name="q1" value="Repair or clean-out">Repair or clean-out</label></div></fieldset>
 <fieldset><legend><span class="sn">Step 2</span>Home or business?</legend><div class="opts"><label><input type="radio" name="q2" value="for my home">Home</label><label><input type="radio" name="q2" value="for my business">Business</label></div></fieldset>
 <fieldset><legend><span class="sn">Step 3</span>How soon?</legend><div class="opts"><label><input type="radio" name="q3" value="as soon as possible">As soon as possible</label><label><input type="radio" name="q3" value="in the next few weeks">In the next few weeks</label><label><input type="radio" name="q3" value="just planning ahead">Just planning ahead</label></div></fieldset>
-<div class="qend"><span class="sn">Step 4</span><h3>Send it to Joe</h3><p class="sum"></p><p>Joe sets up estimates by phone, text or email.</p><div class="cta" style="margin:10px 0 0"><a class="btn b-acc qsms" href="sms:+15127886361">Text this to Joe</a><a class="btn b-line" href="tel:+15127886361">Call (512) 788-6361</a></div></div>
+<div class="qend"><span class="sn">Step 4</span><h3>Send it to Joe</h3><p class="sum"></p><p>Joe sets up estimates by phone or email.</p><div class="cta" style="margin:10px 0 0"><a class="btn b-acc qsms" href="mailto:joeagomez74@gmail.com?subject=Gutter%20estimate%20request">Email this to Joe</a><a class="btn b-line" href="tel:+15127886361">Call (512) 788-6361</a></div></div>
 <div class="qnav"><button type="button" class="qback">Back</button><button type="button" class="qnext">Next</button></div>
 </form></div></section>
 
@@ -221,13 +221,13 @@ footer{background:#06111c;color:#b8c7d6;padding:44px 0 120px;font-size:.95rem}fo
 </div></section>
 
 <section id="contact" style="background:#fff"><div class="wrap contact">
-<div><span class="kick">Contact</span><h2>Need gutters?</h2><p>Call or text Joe, or send an email to set up an estimate.</p>
-<div class="cta"><a class="btn b-acc" href="tel:+15127886361">Call (512) 788-6361</a><a class="btn b-line" href="sms:+15127886361">Text us</a><a class="btn b-line" href="mailto:joeagomez74@gmail.com?subject=Gutter%20estimate%20request">Email us</a></div></div>
+<div><span class="kick">Contact</span><h2>Need gutters?</h2><p>Call Joe, or send an email to set up an estimate.</p>
+<div class="cta"><a class="btn b-acc" href="tel:+15127886361">Call (512) 788-6361</a><a class="btn b-line" href="mailto:joeagomez74@gmail.com?subject=Gutter%20estimate%20request">Email us</a></div></div>
 <div class="card"><b>Get Em Rain Gutters</b><p>Austin and Bastrop, TX<br><a href="tel:+15127886361">(512) 788-6361</a><br><a href="mailto:joeagomez74@gmail.com">joeagomez74@gmail.com</a></p><p class="note">Call for current hours and scheduling.</p><p class="note">Serving Austin, Bastrop and the surrounding areas.</p></div>
 </div></section>
 </main>
 <footer><div class="wrap fgrid"><div><a class="logo" href="#top">Get Em <b>Rain Gutters</b></a><p style="margin-top:12px">Gutter installation and repair in Austin and Bastrop.</p></div><div><b style="color:#fff">Contact</b><br><a href="tel:+15127886361">(512) 788-6361</a><br>Austin and Bastrop, TX</div><div><b style="color:#fff">Links</b><ul class="flinks"><li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#worth">What you gain</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul></div></div><div class="wrap copy">&copy; Get Em Rain Gutters. All rights reserved. &middot; Preview prepared by Forge Systems.</div></footer>
-<nav class="mbar" aria-label="Quick contact"><a class="q" href="tel:+15127886361">Call now<small>(512) 788-6361</small></a><a href="sms:+15127886361">Text<small>Send a message</small></a></nav>
+<nav class="mbar" aria-label="Quick contact"><a class="q" href="tel:+15127886361">Call now<small>(512) 788-6361</small></a><a href="mailto:joeagomez74@gmail.com?subject=Gutter%20estimate%20request">Email<small>Send details</small></a></nav>
 <script>
 (function(){
 (function(){var q=document.querySelector('.quiz');if(!q)return;q.classList.add('qjs');
@@ -235,7 +235,7 @@ var steps=[].slice.call(q.querySelectorAll('fieldset,.qend')),n=steps.length,i=0
 steps.forEach(function(s,k){var sn=s.querySelector('.sn');if(sn)sn.textContent='Step '+(k+1)+' of '+n});
 function picked(){return steps[i].tagName!=='FIELDSET'||!!steps[i].querySelector('input:checked')}
 function show(){steps.forEach(function(s,k){s.classList.toggle('on',k===i)});bar.style.transform='scaleX('+((i+1)/n)+')';back.hidden=i===0;next.hidden=i===n-1;next.disabled=!picked();
-if(i===n-1){var a=[].slice.call(q.querySelectorAll('input:checked')).map(function(x){return x.value});var t=q.dataset.lead+' '+a.join(', ')+'.';sum.textContent=a.join(' · ');sms.href='sms:'+q.dataset.sms+'?&body='+encodeURIComponent(t)}}
+if(i===n-1){var a=[].slice.call(q.querySelectorAll('input:checked')).map(function(x){return x.value});var t=q.dataset.lead+' '+a.join(', ')+'.';sum.textContent=a.join(' · ');sms.href='mailto:'+q.dataset.mail+'?subject='+encodeURIComponent(q.dataset.subj||'Request')+'&body='+encodeURIComponent(t)}}
 q.addEventListener('change',function(){next.disabled=!picked()});
 next.addEventListener('click',function(){if(picked()&&i<n-1){i++;show();var f=steps[i].querySelector('input,a');if(f)f.focus({preventScroll:true})}});
 back.addEventListener('click',function(){if(i>0){i--;show()}});show();})();
